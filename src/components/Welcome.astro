@@ -24,6 +24,9 @@ import background from '../assets/background.svg';
 					>
 				</a>
 				<a class="button" onclick="alert('¡Hola desde Astro!')">test astro</a>
+				<button onclick="posthog.capture('button_clicked', {button_name: 'registrarse'})">
+					Registrarse
+				</button>
 			</section>
 		</section>
 	</main>
